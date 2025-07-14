@@ -33,7 +33,7 @@ const App = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   const API_URL = "https://api.openweathermap.org/data/2.5/weather?";
-  const API_KEY = "c0ac8ed18fdf96d411116e5061cfe350";
+  const API_KEY = `${import.meta.env.VITE_WEATHER_API_KEY}`;
   // Update time every second
   useEffect(() => {
     const timer = setInterval(() => {
