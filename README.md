@@ -43,7 +43,7 @@ Example:
 
 ```bash
 git clone https://github.com/amandeeptyagi/weather-app.git
-cd weather-pro
+cd weather-app
 ```
 
 ### 2. Install dependencies
