@@ -36,8 +36,9 @@ Example:
 - **Tailwind CSS**
 - **Lucide Icons**
 - **OpenWeatherMap API**
-
+---
 ## 🔧 Setup Instructions
+
 
 ### 1. Clone the repository
 
@@ -68,7 +69,7 @@ VITE_WEATHER_API_KEY=your_openweathermap_api_key_here
 npm run dev
 ```
 
-Visit: [http://localhost:5173](http://localhost:5173)
+> Visit: [http://localhost:5173](http://localhost:5173)
 
 ## 🔄 Refresh Weather Data
 
@@ -113,6 +114,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 > Made with ❤️ by Amandeep Tyagi
 
-
-
-🙏If you like this repo please give a star⭐😊.
+>🙏If you like this repo please give a star⭐😊.

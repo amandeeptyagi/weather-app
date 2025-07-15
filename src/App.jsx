@@ -72,7 +72,10 @@ const App = () => {
       fetchWeatherData(searchInput.trim());
       setSearchInput('');
     }
+    document.getElementById('search-input').blur();
   };
+
+
 
   const handleRefresh = () => {
     if (weatherData) {
@@ -209,11 +212,16 @@ const App = () => {
           <form onSubmit={handleSearch} className="max-w-lg mx-auto mb-6">
             <div className="relative group">
               <input
-                type="text"
+                type="search"
+                inputMode="text"
+                autoComplete="on"
+                autoCorrect="on"
+                spellCheck="true"
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
                 placeholder="Search any city worldwide..."
                 className="w-full px-6 py-4 pl-14 pr-16 bg-white/10 backdrop-blur-md rounded-2xl text-white placeholder-white/60 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/40 transition-all duration-300 text-lg group-hover:bg-white/15"
+                id="search-input"
               />
               <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-white/60" />
               <button
@@ -282,7 +290,7 @@ const App = () => {
                     <p className="text-sm opacity-75">Coordinates</p>
                     <p className="text-sm font-mono">{weatherData.coord.lat}°N, {weatherData.coord.lon}°E</p>
                   </div>
-                  
+
                 </div>
 
               </div>
